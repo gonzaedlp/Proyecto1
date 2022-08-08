@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block contenido_que_cambia %}
+
+<form action="" method="post">
+{% csrf_token %}
+  <p><input type="text" name="usuario" placeholder="Usuario"></p>
+  <p><input type="text" name="contraseña" placeholder="Contraseña"></p>
+  <p><input type="submit" value="Enviar">
+
+
+</form>
+
+{% endblock %}
